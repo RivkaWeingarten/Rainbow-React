@@ -19,7 +19,10 @@ function ColorForm(props) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <select placeholder="select color" onChange={(e) => setInput(e.target.value)}>
+        {/* <select
+          placeholder="select color"
+          onChange={(e) => setInput(e.target.value)}
+        >
           <option>violet</option>
           <option>blue</option>
           <option>lightblue</option>
@@ -28,8 +31,15 @@ function ColorForm(props) {
           <option>yellow</option>
           <option>orange</option>
           <option>red</option>
-        </select>
-        
+        </select> */}
+<div>
+  <label htmlFor="colorpicker">Color Picker:</label>
+   <input 
+   onChange={(e) => setInput(e.target.value)} 
+   type="color"
+    id="colorpicker" 
+    />
+   </div>
         <button type="submit">Submit!</button>
       </form>
     </div>

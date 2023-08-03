@@ -4,7 +4,7 @@ function ColorBlock(props){
     return (
         <div className="colorBlock"
         style={{'backgroundColor': props.color}}>
-            <p>{props.color}</p>
+            <p><strong>{props.color}</strong></p>
         </div>
     )
 }
